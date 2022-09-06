@@ -2,6 +2,7 @@ import {Link} from 'react-router-dom'
 import clienteAxios from '../config/axios'
 import {useState} from 'react'
 import Alerta from '../components/Alerta'
+import SystemImage  from '../img/SystemImage.png';
 
 const Register = () => {
   const [nombre, setNombre] = useState('');
@@ -65,7 +66,7 @@ const Register = () => {
         Log in and Manage {""} 
         <span className='text-black'>your Patients</span>
       </h1>
-      <img className="object-contain max-h-80 w-auto mt-8 mx-auto" src="/public/SystemImage.png" alt="Image of the System"  />
+      <img className="object-contain max-h-80 w-auto mt-8 mx-auto" src={SystemImage} alt="Image of the System"  />
      </div>
 
     <div className='mt-20 md:mt-0 shadow-lg px-5 py-10 rounded-xl bg-white'>

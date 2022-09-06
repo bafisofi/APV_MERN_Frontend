@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import{useParams, Link} from 'react-router-dom';
 import Alerta from '../components/Alerta';
 import clienteAxios from "../config/axios";
+import SystemImage  from '../img/SystemImage.png';
 
 
 const NewPassword = () => {
@@ -75,7 +76,7 @@ const NewPassword = () => {
       Reset your password and don't lose access to {""} 
         <span className='text-black'>your Patients</span>
       </h1>
-      <img className="object-contain max-h-72 w-auto mt-8 mx-auto" src="../../public/SystemImage.png" alt="Image of the System"  />
+      <img className="object-contain max-h-72 w-auto mt-8 mx-auto" src={SystemImage} alt="Image of the System"  />
      </div>
     
      <div className='mt-20 md:mt-0 shadow-lg px-5 py-10 rounded-xl bg-white'>

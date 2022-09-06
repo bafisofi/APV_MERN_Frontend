@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import AdminNav from "../components/AdminNav"
 import Alerta from "../components/Alerta"
 import useAuth from "../hooks/useAuth"
+import SystemImage  from '../img/SystemImage.png';
 
 const EditProfile = () => {
 
@@ -39,7 +40,7 @@ const {msg} = alerta
 
       <div className="flex justify-around md:flex-row flex-col ">
         <div>
-        <img className="object-contain max-h-96 w-auto md:mt-14  mt-8 mb-12  mx-auto" src="../../public/SystemImage.png" alt="Image of the System"  />
+        <img className="object-contain max-h-96 w-auto md:mt-14  mt-8 mb-12  mx-auto" src={SystemImage} alt="Image of the System"  />
         </div>
         <div className="w-full md:w-1/2 bg-white shadow rounded-lg p-5">
           {msg && <Alerta alerta ={alerta}/>}
