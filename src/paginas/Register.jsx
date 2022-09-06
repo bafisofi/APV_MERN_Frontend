@@ -65,7 +65,6 @@ const Register = () => {
         Log in and Manage {""} 
         <span className='text-black'>your Patients</span>
       </h1>
-      {/* <img className="object-contain max-h-80 w-auto mt-8 mx-auto" src="../../public/SystemImage.png" alt="Image of the System"  /> */}
       <img className="object-contain max-h-80 w-auto mt-8 mx-auto" src="/public/SystemImage.png" alt="Image of the System"  />
      </div>
 
